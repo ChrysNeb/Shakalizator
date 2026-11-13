@@ -1,0 +1,6 @@
+/* Compact tool navigation for an Android viewport; processing controls are unchanged. */
+.site-header .site-brand{display:none!important}
+.site-header{margin-bottom:12px!important;min-width:0}
+.site-nav{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;max-width:100%;margin-top:0!important;padding-bottom:7px;scrollbar-width:thin}
+.site-nav a{flex:0 0 auto!important;font-size:13px!important;padding:8px 10px!important}
+input,textarea,select,button{-webkit-tap-highlight-color:transparent}

@@ -39,7 +39,7 @@ public final class MainActivity extends ComponentActivity {
         root=new LinearLayout(this);root.setOrientation(LinearLayout.VERTICAL);root.setBackgroundColor(0xff0f1115);root.setImportantForAutofill(View.IMPORTANT_FOR_AUTOFILL_NO_EXCLUDE_DESCENDANTS);setContentView(root);
         root.setOnApplyWindowInsetsListener((v,i)->{root.setPadding(0,i.getSystemWindowInsetTop(),0,i.getSystemWindowInsetBottom());return i;});
         LinearLayout bar=new LinearLayout(this);bar.setGravity(Gravity.CENTER_VERTICAL);bar.setPadding(dp(8),dp(3),dp(8),dp(3));
-        Button home=button("🐺 Главная",()->load(LocalPages.ORIGIN+"/index.html"));Button about=button("О приложении",()->load(LocalPages.ORIGIN+"/about.html"));Button online=button("Веб-версия ↗",()->openBrowser("https://shakalizator.space/"));
+        Button home=button("🐺 Главная",()->load(LocalPages.ORIGIN+"/index.html"));Button about=button("О проекте",()->load(LocalPages.ORIGIN+"/about.html"));Button online=button("Веб-версия ↗",()->openBrowser("https://shakalizator.space/"));
         for(Button b:new Button[]{home,about,online}){LinearLayout.LayoutParams p=new LinearLayout.LayoutParams(0,dp(44),1);p.setMargins(dp(3),0,dp(3),0);bar.addView(b,p);}root.addView(bar);
         progress=new ProgressBar(this,null,android.R.attr.progressBarStyleHorizontal);progress.setMax(100);root.addView(progress,new LinearLayout.LayoutParams(-1,dp(3)));
         content=new FrameLayout(this);root.addView(content,new LinearLayout.LayoutParams(-1,0,1));

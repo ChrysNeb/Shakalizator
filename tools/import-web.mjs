@@ -8,6 +8,7 @@ for(const [section,folder] of sites){
     const target=path.join(dest,section);fs.mkdirSync(target,{recursive:true});
     for(const entry of fs.readdirSync(path.join(source,folder),{withFileTypes:true})){
         if(!entry.isFile()||! /\.(html|js|css|json|bin|svg|png|jpg|ico|webmanifest)$/.test(entry.name))continue;
+        if(section===''&&entry.name==='index.html')continue; // Android dashboard is maintained separately.
         if(['404.html','robots.txt','sitemap.xml'].includes(entry.name))continue;
         const origin=path.join(source,folder,entry.name),file=path.join(target,entry.name);
         if(/\.(html|js)$/.test(entry.name)){
@@ -20,7 +21,7 @@ for(const [section,folder] of sites){
                 for(const asset of ['app.js','worker.js','wordlist.json','skins.json','favicon.svg','favicon.ico','apple-touch-icon.png','site.webmanifest'])text=text.replaceAll('/'+asset,'/crypto/'+asset);
             }
             if(section==='pic')text=text.replace(/let MAX_SOURCE = [^;]+;/,'let MAX_SOURCE = 2048;').replace(/let MAX_AREA = [^;]+;/,'let MAX_AREA = 4000000;').replace(/let VIEW_LONG = [^;]+;/,'let VIEW_LONG = 1280;');
-            if(entry.name.endsWith('.html'))text=text.replace('</head>','<script src="/android.js"></script></head>');
+            if(entry.name.endsWith('.html'))text=text.replace('</head>','<link rel="stylesheet" href="/android.css"><script src="/android.js"></script></head>');
             fs.writeFileSync(file,text);
         }else fs.copyFileSync(origin,file);
     }
