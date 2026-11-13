@@ -18,6 +18,7 @@ APK находится в `app/build/outputs/apk/debug/app-debug.apk`. В APK у
 - `android.js`: экспорт Blob/data-результатов в Android через чанки по 64 КиБ. Полный файл не переводится в одну огромную base64-строку.
 - `vendor/`: FFmpeg wrapper 0.12.10 / single-thread core 0.12.6, JS и WASM. `manifest.json` фиксирует источники и SHA-256.
 - `about.html`: описание приложения, FAQ, веб-версия и приватность.
+- `index.html` и `android.css`: компактный Android-хаб и навигация инструментов. При обновлении веб-исходников Android-хаб сохраняется.
 
 Криптография использует локальный защищённый origin `https://appassets.androidplatform.net`, поэтому доступны WebCrypto и module workers. CSP Шакалографии ограничивает исполняемые скрипты локальными файлами. Фраза и текст не передаются в Android-логи, URL или хранилище настроек.
 
