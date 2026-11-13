@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Шакалография — зашифровать текст онлайн шакалами</title>
+<meta name="description" content="Зашифровать текст онлайн бесплатно: AES-256-GCM внутри, шакальная шкура снаружи (Т9, кракозябры, пересылки). Шакал-фраза из 12 слов, всё в браузере.">
+<link rel="canonical" href="https://crypto.shakalizator.space/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="alternate" hreflang="ru" href="https://crypto.shakalizator.space/">
+<link rel="alternate" hreflang="x-default" href="https://crypto.shakalizator.space/">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="/crypto/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/crypto/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/crypto/apple-touch-icon.png">
+<link rel="manifest" href="/crypto/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Шакализатор">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Шакалография — зашифровать текст онлайн шакалами">
+<meta property="og:description" content="Зашифровать текст онлайн бесплатно: AES-256-GCM внутри, шакальная шкура снаружи (Т9, кракозябры, пересылки). Шакал-фраза из 12 слов, всё в браузере.">
+<meta property="og:url" content="https://crypto.shakalizator.space/">
+<meta property="og:image" content="https://crypto.shakalizator.space/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Слева «Привет», справа то же слово в шакальной шкуре, крупная надпись ШАКАЛОГРАФИЯ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Шакалография — зашифровать текст онлайн шакалами">
+<meta name="twitter:description" content="Зашифровать текст онлайн бесплатно: AES-256-GCM внутри, шакальная шкура снаружи (Т9, кракозябры, пересылки). Шакал-фраза из 12 слов, всё в браузере.">
+<meta name="twitter:image" content="https://crypto.shakalizator.space/og-image.jpg">
+<meta name="twitter:image:alt" content="Слева «Привет», справа то же слово в шакальной шкуре, крупная надпись ШАКАЛОГРАФИЯ">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Шакалография","url":"https://crypto.shakalizator.space/","description":"Зашифровать текст онлайн: настоящий AES-256-GCM внутри и шакальная шкура снаружи (Т9, кракозябры, пересылки). Шакал-фраза из 12 или 24 слов. Бесплатно, всё в браузере.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Современный браузер с поддержкой WebCrypto","offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"},"inLanguage":"ru"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Сообщение куда-то отправляется?","acceptedAnswer":{"@type":"Answer","text":"Нет. Шифрование и расшифровка происходят прямо в вашем браузере, после загрузки страницы она не делает сетевых запросов. Фраза и текст не попадают ни на сервер, ни в localStorage."}},
+{"@type":"Question","name":"Можно ли восстановить сообщение без шакал-фразы?","acceptedAnswer":{"@type":"Answer","text":"Нет. Восстановления не существует: потеряли фразу — сообщение не расшифровать никому, включая нас."}},
+{"@type":"Question","name":"Зачем уровень шакалов?","acceptedAnswer":{"@type":"Answer","text":"Уровень — вторая часть ключа: с неверным уровнем сообщение не расшифруется. Заодно он выбирает внешний вид шифротекста. Шкура частично выдаёт уровень, поэтому безопасность держится на фразе, а уровень добавляет около 3,5 бита."}},
+{"@type":"Question","name":"Переживёт ли шифротекст Telegram и почту?","acceptedAnswer":{"@type":"Answer","text":"Да. В шифротексте только обычные буквы и пробелы: он переживает копипасту через Telegram, WhatsApp, Gmail и Word, лишние пробелы, переносы строк и смену регистра. Не редактируйте сам текст, иначе расшифровать не получится."}},
+{"@type":"Question","name":"Это можно использовать для серьёзных секретов?","acceptedAnswer":{"@type":"Answer","text":"Нет. Внутри настоящий AES-256-GCM, но это фан-инструмент без независимого аудита. Гостайны, пароли от денег и всё действительно важное им шифровать не стоит."}}
+]}
+</script>
+<style>
+/* HEADER-CSS:START */
+.site-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px 16px;flex-wrap:wrap;margin:0 0 14px}
+.site-brand{min-width:0}
+.site-logo{display:inline-block;font:800 26px/1.1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.5px;color:#e8eaf0;text-decoration:none}
+.site-logo span{color:#f5a524}
+.site-slogan{margin-top:4px;color:#8c93a3;font-size:13px;line-height:1.4}
+.site-nav{display:flex;gap:6px;flex-wrap:wrap}
+.site-nav a{display:inline-block;text-decoration:none;color:#e8eaf0;background:#1f232c;border:1px solid #2b303b;border-radius:10px;padding:8px 12px;font:600 15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;white-space:nowrap}
+.site-nav a:hover{border-color:#f5a524}
+.site-nav a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.site-nav a[aria-current=page]{background:#f5a524;color:#1a1200;border-color:#f5a524;font-weight:700}
+@media (max-width:700px){.site-header{display:block}.site-nav{margin-top:10px}.site-nav a{flex:1 1 auto;text-align:center;padding:9px 8px}}
+/* HEADER-CSS:END */
+  :root{--bg:#0f1115;--panel:#181b22;--panel2:#1f232c;--line:#2b303b;--text:#e8eaf0;--muted:#a3aabb;--accent:#f5a524;--danger:#ff3b30}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  body{min-height:100vh}
+  .wrap{max-width:1280px;margin:0 auto;padding:16px}
+  h1{margin:0;font-size:clamp(20px,4.6vw,26px);letter-spacing:.5px}
+  h1 span{color:var(--accent)}
+  .page-head{margin:4px 0 14px}
+  .page-head .sub{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.5}
+  .honest{background:#2a2113;border:1px solid #6b4d12;color:#ffd58a;border-radius:10px;padding:8px 12px;font-size:13px;margin:0 0 12px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:900px){.cols{grid-template-columns:1fr}}
+  .pane{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px;min-width:0}
+  .pane h2{margin:0;font-size:18px}
+  label.l{color:var(--muted);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.8px}
+  textarea{display:block;width:100%;resize:vertical;font:15px/1.5 ui-monospace,SFMono-Regular,Consolas,"Liberation Mono",monospace;color:var(--text);background:#0b0d11;border:1px solid var(--line);border-radius:8px;padding:10px;min-height:84px}
+  textarea:focus{outline:2px solid var(--accent);outline-offset:0}
+  textarea.big{min-height:130px}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+  .spacer{flex:1}
+  button{font:inherit;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer}
+  button:hover:not(:disabled){border-color:var(--accent)}
+  button:disabled{opacity:.5;cursor:default}
+  button.primary{background:var(--accent);color:#1a1200;border-color:var(--accent);font-weight:700}
+  button.seg.on{background:var(--accent);color:#1a1200;border-color:var(--accent);font-weight:700}
+  .btn1210{background:linear-gradient(135deg,#7a0d0d,#d62b20);border-color:#ff3b30;color:#fff;font-weight:800;letter-spacing:1px}
+  .btn1210.on{outline:3px solid #fff}
+  input[type=range]{width:100%;accent-color:var(--accent);height:28px}
+  .lvl{display:flex;justify-content:space-between;align-items:baseline}
+  .lvl b{font-size:18px}
+  .note{color:var(--muted);font-size:13px}
+  .warnbox{color:#ffd58a;font-size:13px}
+  .err{color:#ff8a80;font-size:14px;min-height:20px}
+  .okmsg{color:#8be28b;font-size:13px}
+  .count{color:var(--muted);font-size:12px;text-align:right}
+  .out{white-space:pre-wrap;word-break:break-word;background:#0b0d11;border:1px solid var(--line);border-radius:8px;padding:10px;min-height:60px;font:15px/1.5 ui-monospace,Consolas,monospace}
+  .sugg{display:flex;gap:6px;flex-wrap:wrap;min-height:0}
+  .sugg button{padding:4px 10px;font-size:13px}
+  .think{display:none;align-items:center;gap:8px;color:var(--accent);font-weight:600}
+  .think.on{display:flex}
+  .think i{width:14px;height:14px;border-radius:50%;border:3px solid var(--line);border-top-color:var(--accent);animation:sp .8s linear infinite}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  .hidden{display:none!important}
+  .seo{margin:32px 0 8px;max-width:820px}
+  .seo h2{font-size:22px;margin:26px 0 8px}
+  .seo h3{font-size:17px;margin:16px 0 4px}
+  .seo p,.seo li{font-size:16px;line-height:1.6;margin:0 0 10px}
+  .seo ol{padding-left:22px;margin:0 0 10px}
+  footer{margin:18px 0 8px;color:var(--muted);font-size:12px;text-align:center}
+  footer a{color:var(--accent)}
+</style>
+<script src="/android.js"></script></head>
+<body>
+<div class="wrap">
+<!-- HEADER:START -->
+<header class="site-header">
+  <div class="site-brand">
+    <a class="site-logo" href="https://shakalizator.space">Шакал<span>изатор</span></a>
+    <div class="site-slogan">Делаем ваше фото прекрасным. Бережно. В браузере.</div>
+  </div>
+  <nav class="site-nav" aria-label="Разделы Шакализатора">
+    <a href="https://shakalizator.space/">🐺 Шакализатор</a>
+    <a href="https://pic.shakalizator.space/">📷 Фото</a>
+    <a href="https://vid.shakalizator.space/">🎬 Видео</a>
+    <a href="https://audio.shakalizator.space/">🎧 Аудио</a>
+    <a href="https://txt.shakalizator.space/">✍️ Текст</a>
+    <a href="https://crypto.shakalizator.space/" aria-current="page">🔐 Крипта</a>
+  </nav>
+</header>
+<!-- HEADER:END -->
+  <div class="page-head">
+    <h1>Шакал<span>ография</span> — зашифровать текст онлайн</h1>
+    <p class="sub">Ваше сообщение под защитой шакалов.</p>
+  </div>
+  <p class="honest">Честно: внутри настоящий AES-256-GCM, но это фан-инструмент без независимого аудита. Гостайны, пароли от денег и всё по-настоящему важное им шифровать не стоит.</p>
+
+  <div class="cols">
+    <section class="pane" aria-labelledby="hEnc">
+      <h2 id="hEnc">🔐 Зашакалить</h2>
+      <label class="l" for="phrase">Шакал-фраза</label>
+      <textarea id="phrase" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="phraseStatus"></textarea>
+      <div class="row">
+        <button id="n12" class="seg on" type="button" aria-pressed="true">12 слов</button>
+        <button id="n24" class="seg" type="button" aria-pressed="false">24 слова</button>
+        <button id="newPhrase" type="button" aria-label="Сгенерировать новую шакал-фразу">🎲 Новая фраза</button>
+        <button id="copyPhrase" type="button">Копировать</button>
+        <button id="dlPhrase" type="button">Скачать .txt</button>
+      </div>
+      <div id="phraseStatus" class="note" role="status"></div>
+      <div class="warnbox">Потеряешь фразу — шакалы не отдадут. Восстановления нет.</div>
+
+      <div class="lvl"><label class="l" for="lvlE">Шакалов</label><b id="lblE">6 шакалов</b></div>
+      <input id="lvlE" type="range" min="1" max="10" step="1" value="6" aria-label="Уровень шакалов от 1 до 10">
+      <button id="e1210" class="btn1210" type="button" aria-pressed="false">12/10 ВЫСОКОЕ ИСКУССТВО</button>
+
+      <label class="l" for="msg">Сообщение</label>
+      <textarea id="msg" class="big" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="4096" placeholder="Встретимся в семь у метро"></textarea>
+      <div class="count"><span id="msgCount">0</span> / 4096</div>
+      <button id="encBtn" class="primary" type="button">Защитить шакалами</button>
+      <div id="thinkE" class="think" role="status"><i></i> Шакалы думают…</div>
+      <div id="errE" class="err" role="alert"></div>
+      <div id="resE" class="hidden">
+        <label class="l" for="outE">Шакальное сообщение</label>
+        <textarea id="outE" class="big" readonly spellcheck="false"></textarea>
+        <div class="row">
+          <button id="copyE" type="button">Копировать</button>
+          <button id="shareE" type="button">Поделиться</button>
+          <button id="pngE" type="button" class="hidden">Скачать как PNG</button>
+          <span id="okE" class="okmsg" role="status"></span>
+        </div>
+        <div id="lenE" class="note"></div>
+      </div>
+    </section>
+
+    <section class="pane" aria-labelledby="hDec">
+      <h2 id="hDec">🗝 Расшакалить</h2>
+      <label class="l" for="phraseD">Шакал-фраза</label>
+      <textarea id="phraseD" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="шакал мыло превед…"></textarea>
+      <div id="sugg" class="sugg" aria-label="Подсказки слов"></div>
+      <div id="phraseDStatus" class="note" role="status"></div>
+
+      <div class="lvl"><label class="l" for="lvlD">Шакалов</label><b id="lblD">6 шакалов</b></div>
+      <input id="lvlD" type="range" min="1" max="10" step="1" value="6" aria-label="Уровень шакалов от 1 до 10">
+      <button id="d1210" class="btn1210" type="button" aria-pressed="false">12/10 ВЫСОКОЕ ИСКУССТВО</button>
+      <div id="detect" class="note" role="status"></div>
+
+      <label class="l" for="cipher">Шакальное сообщение</label>
+      <textarea id="cipher" class="big" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Вставьте шифротекст или ссылку-пакет"></textarea>
+      <div id="pngRow" class="row hidden">
+        <label class="l" for="pngIn">или PNG</label>
+        <input id="pngIn" type="file" accept="image/png">
+        <span id="pngMsg" class="note" role="status"></span>
+      </div>
+      <button id="decBtn" class="primary" type="button">Расшакалить</button>
+      <div id="thinkD" class="think" role="status"><i></i> Шакалы думают…</div>
+      <div id="errD" class="err" role="alert"></div>
+      <div id="resD" class="hidden">
+        <label class="l">Исходное сообщение</label>
+        <div id="outD" class="out"></div>
+        <div class="row"><button id="copyD" type="button">Копировать</button><span id="okD" class="okmsg" role="status"></span></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="seo" id="about">
+    <h2>Что такое шакалография</h2>
+    <p>Шакалография — это шифрование сообщений, которое снаружи выглядит как текст после Т9 Nokia, кривой кодировки и пятидесяти пересылок. Внутри — настоящая криптография: можно зашифровать текст онлайн и отправить секретное сообщение в любой мессенджер, а прочитать его сможет только тот, у кого есть шакал-фраза. Ваше сообщение под защитой шакалов.</p>
+    <h2>Как зашифровать сообщение</h2>
+    <ol>
+      <li>Сохраните шакал-фразу: она сгенерирована сразу при заходе. Отправьте её получателю другим каналом.</li>
+      <li>Выберите количество шакалов от 1 до 10 или режим 12/10, напишите сообщение и нажмите «Защитить шакалами».</li>
+      <li>Скопируйте шифровку текста и отправьте. Получатель вводит фразу, выбирает то же количество шакалов и нажимает «Расшакалить».</li>
+    </ol>
+    <h2>Что такое шакал-фраза</h2>
+    <p>Это аналог сид-фразы кошелька, только шакальный: 12 или 24 слова из словаря на 2048 слов (по 11 бит на слово). Последнее слово несёт контрольную сумму, поэтому опечатка в фразе ловится сразу, а не после неудачной расшифровки. Так работает и наш сид фраза генератор: случайность берётся из crypto.getRandomValues.</p>
+    <h2>Что внутри</h2>
+    <p>Фраза превращается в ключ через PBKDF2-SHA256 с 600 000 итераций, а сообщение шифруется алгоритмом AES-256-GCM. Уровень шакалов подмешивается в ключ: с неверным уровнем сообщение не расшифруется. Байты шифртекста затем кодируются в слова, похожие на вывод Т9, кракозябры и олбанский, поэтому шифровка выглядит как мусор из пересланного сообщения. Внешний вид частично выдаёт уровень, и это нормально: безопасность держится на фразе, а уровень добавляет около 3,5 бита.</p>
+    <h2>FAQ</h2>
+    <h3>Сообщение куда-то отправляется?</h3>
+    <p>Нет. Шифрование и расшифровка происходят прямо в вашем браузере, после загрузки страницы она не делает сетевых запросов. Фраза и текст не попадают ни на сервер, ни в localStorage.</p>
+    <h3>Можно ли восстановить сообщение без шакал-фразы?</h3>
+    <p>Нет. Восстановления не существует: потеряли фразу — сообщение не расшифровать никому, включая нас.</p>
+    <h3>Зачем уровень шакалов?</h3>
+    <p>Уровень — вторая часть ключа: с неверным уровнем сообщение не расшифруется. Заодно он выбирает внешний вид шифротекста. Шкура частично выдаёт уровень, поэтому безопасность держится на фразе, а уровень добавляет около 3,5 бита.</p>
+    <h3>Переживёт ли шифротекст Telegram и почту?</h3>
+    <p>Да. В шифротексте только обычные буквы и пробелы: он переживает копипасту через Telegram, WhatsApp, Gmail и Word, лишние пробелы, переносы строк и смену регистра. Не редактируйте сам текст, иначе расшифровать не получится.</p>
+    <h3>Это можно использовать для серьёзных секретов?</h3>
+    <p>Нет. Внутри настоящий AES-256-GCM, но это фан-инструмент без независимого аудита. Гостайны, пароли от денег и всё действительно важное им шифровать не стоит.</p>
+  </section>
+  <footer>Шакалография · всё считается в вашем браузере · <a href="https://shakalizator.space/">Все шакализаторы</a></footer>
+</div>
+<script type="module" src="/crypto/app.js"></script>
+</body>
+</html>

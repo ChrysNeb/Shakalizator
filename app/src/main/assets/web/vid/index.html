@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Видео-шакализатор — зашакалить видео онлайн</title>
+<meta name="description" content="Зашакалить видео онлайн бесплатно: битрейт проваливается, картинка плывёт датамошем, звук булькает, как после пяти пересылок. Всё в браузере, без регистрации.">
+<link rel="canonical" href="https://vid.shakalizator.space/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="alternate" hreflang="ru" href="https://vid.shakalizator.space/">
+<link rel="alternate" hreflang="x-default" href="https://vid.shakalizator.space/">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Шакализатор">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Видео-шакализатор — зашакалить видео онлайн">
+<meta property="og:description" content="Зашакалить видео онлайн бесплатно: битрейт проваливается, картинка плывёт датамошем, звук булькает, как после пяти пересылок. Всё в браузере, без регистрации.">
+<meta property="og:url" content="https://vid.shakalizator.space/">
+<meta property="og:image" content="https://vid.shakalizator.space/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Пейзаж слева в норме и он же в пиксельном режиме 12/10 справа, крупные надписи 12/10 и ВИДЕО">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Видео-шакализатор — зашакалить видео онлайн">
+<meta name="twitter:description" content="Зашакалить видео онлайн бесплатно: битрейт проваливается, картинка плывёт датамошем, звук булькает, как после пяти пересылок. Всё в браузере, без регистрации.">
+<meta name="twitter:image" content="https://vid.shakalizator.space/og-image.jpg">
+<meta name="twitter:image:alt" content="Пейзаж слева в норме и он же в пиксельном режиме 12/10 справа, крупные надписи 12/10 и ВИДЕО">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Видео-шакализатор","url":"https://vid.shakalizator.space/","description":"Зашакалить видео онлайн: битрейт проваливается, картинка плывёт датамошем, звук булькает. 10 уровней и режим 12/10. Бесплатно, без регистрации, всё в браузере.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Современный браузер с поддержкой WebAssembly","offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"},"inLanguage":"ru"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Бесплатно ли зашакалить видео?","acceptedAnswer":{"@type":"Answer","text":"Да, бесплатно, без регистрации и водяных знаков."}},
+{"@type":"Question","name":"Загружается ли видео на сервер?","acceptedAnswer":{"@type":"Answer","text":"Нет. Видео обрабатывается прямо в вашем браузере, на сервер ничего не отправляется."}},
+{"@type":"Question","name":"Сколько ждать?","acceptedAnswer":{"@type":"Answer","text":"На компьютере обычно в несколько раз дольше длины ролика, на телефоне ещё дольше. Для подбора уровня есть «Превью 5 сек», а на телефоне лучше обрезать видео до 15 секунд."}},
+{"@type":"Question","name":"Какие лимиты по длине и размеру?","acceptedAnswer":{"@type":"Answer","text":"До 200 МБ и до 3 минут. По умолчанию берутся первые 30 секунд, отрезок можно поменять в полях «с» и «до»."}},
+{"@type":"Question","name":"Что такое 12/10 для видео?","acceptedAnswer":{"@type":"Answer","text":"Пиксель-арт режим: картинка сжимается до 48 пикселей, палитра до 16 цветов, пиксели увеличиваются в десять раз. Из такого ролика можно скачать и GIF."}},
+{"@type":"Question","name":"Можно ли зашакалить фото?","acceptedAnswer":{"@type":"Answer","text":"Да, у шакализатора есть фото-версия: pic.shakalizator.space."}}
+]}
+</script>
+<style>
+/* HEADER-CSS:START */
+.site-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px 16px;flex-wrap:wrap;margin:0 0 14px}
+.site-brand{min-width:0}
+.site-logo{display:inline-block;font:800 26px/1.1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:.5px;color:#e8eaf0;text-decoration:none}
+.site-logo span{color:#f5a524}
+.site-slogan{margin-top:4px;color:#8c93a3;font-size:13px;line-height:1.4}
+.site-nav{display:flex;gap:6px;flex-wrap:wrap}
+.site-nav a{display:inline-block;text-decoration:none;color:#e8eaf0;background:#1f232c;border:1px solid #2b303b;border-radius:10px;padding:8px 12px;font:600 15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;white-space:nowrap}
+.site-nav a:hover{border-color:#f5a524}
+.site-nav a:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.site-nav a[aria-current=page]{background:#f5a524;color:#1a1200;border-color:#f5a524;font-weight:700}
+@media (max-width:700px){.site-header{display:block}.site-nav{margin-top:10px}.site-nav a{flex:1 1 auto;text-align:center;padding:9px 8px}}
+/* HEADER-CSS:END */
+  :root{
+    --bg:#0f1115; --panel:#181b22; --panel2:#1f232c; --line:#2b303b;
+    --text:#e8eaf0; --muted:#8c93a3; --accent:#f5a524; --danger:#ff3b30;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  body{min-height:100vh}
+  .wrap{max-width:1280px;margin:0 auto;padding:16px}
+  h1{margin:0;font-size:clamp(20px,4.6vw,26px);letter-spacing:.5px}
+  h1 span{color:var(--accent)}
+  .page-head{margin:4px 0 14px}
+  .page-head .sub{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.5}
+  .seo{margin:32px 0 8px;max-width:820px}
+  .seo h2{font-size:22px;margin:26px 0 8px;color:var(--text)}
+  .seo h3{font-size:17px;margin:16px 0 4px;color:var(--text)}
+  .seo p,.seo li{color:var(--text);font-size:16px;line-height:1.6;margin:0 0 10px}
+  .seo ol{padding-left:22px;margin:0 0 10px}
+  .seo a{color:var(--accent)}
+
+  #drop{border:2px dashed var(--line);border-radius:14px;background:var(--panel);padding:40px 16px;text-align:center;cursor:pointer;transition:.15s}
+  #drop:hover,#drop.over{border-color:var(--accent);background:var(--panel2)}
+  #drop b{display:block;font-size:18px;margin-bottom:6px}
+  #drop small{color:var(--muted)}
+  body.has-file #drop{padding:10px;border-radius:10px}
+  body.has-file #drop b{display:inline;font-size:14px;margin:0 8px 0 0}
+  body.has-file #drop small{display:none}
+
+  .controls{margin-top:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;display:none;gap:14px;flex-direction:column}
+  body.has-file .controls{display:flex}
+  .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .level{flex:1 1 320px;min-width:260px}
+  .level-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+  #label{font-size:20px;font-weight:700}
+  #icons{font-size:16px;letter-spacing:1px;min-height:22px;max-width:60%;text-align:right;word-break:break-all}
+  input[type=range]{width:100%;accent-color:var(--accent);height:28px}
+  .dim{opacity:.35;pointer-events:none}
+  input[type=number],input[type=text]{font:inherit;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:90px}
+  label.f{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:14px}
+  button{font:inherit;color:var(--text);background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:9px 14px;cursor:pointer}
+  button:hover:not(:disabled){border-color:var(--accent)}
+  button:disabled{opacity:.45;cursor:default}
+  button.primary{background:var(--accent);color:#1a1200;border-color:var(--accent);font-weight:700}
+  #btn1210{background:linear-gradient(135deg,#7a0d0d,#d62b20);border-color:#ff3b30;color:#fff;font-weight:800;letter-spacing:1px}
+  #btn1210:hover{box-shadow:0 0 16px 2px rgba(255,59,48,.55);border-color:#ff8a80}
+  #btn1210.on{outline:3px solid #fff;animation:pulse 1.2s infinite}
+  @keyframes pulse{50%{box-shadow:0 0 22px 4px rgba(255,59,48,.8)}}
+  .spacer{flex:1}
+  .note{color:var(--muted);font-size:13px}
+  .warn{background:#2a2113;border:1px solid #6b4d12;color:#ffd58a;border-radius:10px;padding:8px 12px;font-size:13px;display:none}
+
+  .prog{display:none;gap:8px;flex-direction:column}
+  .prog.on{display:flex}
+  .bar{height:12px;border-radius:99px;background:var(--panel2);border:1px solid var(--line);overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#c27a00,var(--accent));transition:width .2s}
+  .prog-row{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+  #stage{font-weight:600}
+
+  .players{margin-top:12px;display:none;grid-template-columns:1fr 1fr;gap:12px}
+  body.has-file .players{display:grid}
+  @media (max-width:760px){.players{grid-template-columns:1fr}}
+  .pane{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px}
+  .pane h3{margin:2px 4px 8px;font-size:13px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:1px}
+  video{display:block;width:100%;max-height:70vh;border-radius:8px;background:#000}
+  .empty{aspect-ratio:16/9;display:grid;place-items:center;color:var(--muted);background:#000;border-radius:8px;font-size:13px;text-align:center;padding:10px}
+  footer{margin:18px 0 8px;color:var(--muted);font-size:12px;text-align:center}
+  details{color:var(--muted);font-size:12px}
+  pre#info{white-space:pre-wrap;margin:6px 0 0}
+</style>
+<script src="/android.js"></script></head>
+<body>
+<div class="wrap">
+  <!-- HEADER:START -->
+<header class="site-header">
+  <div class="site-brand">
+    <a class="site-logo" href="https://shakalizator.space">Шакал<span>изатор</span></a>
+    <div class="site-slogan">Делаем ваше фото прекрасным. Бережно. В браузере.</div>
+  </div>
+  <nav class="site-nav" aria-label="Разделы Шакализатора">
+    <a href="https://shakalizator.space/">🐺 Шакализатор</a>
+    <a href="https://pic.shakalizator.space/">📷 Фото</a>
+    <a href="https://vid.shakalizator.space/" aria-current="page">🎬 Видео</a>
+    <a href="https://audio.shakalizator.space/">🎧 Аудио</a>
+    <a href="https://txt.shakalizator.space/">✍️ Текст</a>
+    <a href="https://crypto.shakalizator.space/">🔐 Крипта</a>
+  </nav>
+</header>
+<!-- HEADER:END -->
+  <div class="page-head">
+    <h1>Видео-шакал<span>изатор</span> — зашакалить видео онлайн</h1>
+    <p class="sub">Видео после пяти пересылок в ватсапе по EDGE: макроблоки, плывущая картинка, булькающий звук.</p>
+  </div>
+
+  <div id="drop" tabindex="0" role="button" aria-label="Выбрать видео или перетащить его сюда">
+    <b>Перетащи видео сюда</b> <small>или нажми для выбора · mp4 / mov / webm / mkv / gif · до 200 МБ</small>
+    <input id="file" type="file" accept="video/*,.mp4,.mov,.webm,.mkv,.gif,image/gif" hidden>
+  </div>
+
+  <section class="controls" id="controls">
+    <div class="warn" id="mobWarn">На телефоне ffmpeg работает в один поток и медленно — лучше обрежь до 15 секунд.</div>
+    <div class="row">
+      <div class="level" id="levelBox">
+        <div class="level-top"><span id="label">5 шакалов</span><span id="icons" aria-hidden="true"></span></div>
+        <input id="slider" type="range" min="1" max="10" step="1" value="5" aria-label="Уровень шакальности от 1 до 10">
+      </div>
+      <button id="btn1210" aria-label="Режим 12/10 шакалов: пиксельное видео" title="Пиксель-арт 48px, 16 цветов, битый, но чёткий">12/10 ШАКАЛОВ</button>
+    </div>
+    <div class="row">
+      <label class="f">с, сек <input id="tFrom" type="number" min="0" step="0.5" value="0"></label>
+      <label class="f">до, сек <input id="tTo" type="number" min="0.5" step="0.5" value="30"></label>
+      <label class="f">seed <input id="seed" type="text" inputmode="numeric" value=""></label>
+      <button id="dice" aria-label="Новый случайный seed" title="Новый случайный seed">🎲</button>
+      <span class="note" id="meta"></span>
+    </div>
+    <div class="row">
+      <button id="btnPreview" aria-label="Превью: зашакалить первые 5 секунд">Превью 5 сек</button>
+      <button id="btnGo" class="primary" aria-label="Зашакалить видео">Шакализировать</button>
+      <button id="btnAgain" disabled aria-label="Ещё шакальнее: прогнать результат ещё раз">Ещё шакальнее</button>
+      <span class="spacer"></span>
+      <button id="btnGif" disabled style="display:none" aria-label="Скачать результат как GIF">Скачать GIF</button>
+      <button id="btnDl" class="primary" disabled aria-label="Скачать шакальное видео">Скачать</button>
+    </div>
+    <div class="prog" id="prog">
+      <div class="prog-row"><span id="stage">…</span><span id="pct" class="note"></span><button id="btnCancel" aria-label="Отменить обработку">Отмена</button></div>
+      <div class="bar"><i id="barfill"></i></div>
+    </div>
+    <div class="note">Видео никуда не загружается — всё считается у тебя в браузере.</div>
+  </section>
+
+  <section class="players">
+    <div class="pane"><h3>Оригинал</h3><div id="slotA"><div class="empty">—</div></div></div>
+    <div class="pane"><h3 id="resTitle">Результат</h3><div id="slotB"><div class="empty">Нажми «Шакализировать»</div></div></div>
+  </section>
+
+  <section class="seo" id="about">
+    <h2>Что такое видео-шакализатор</h2>
+    <p>Это видео после пяти пересылок в ватсапе по EDGE-интернету: винтажный битрейт, картинка обретает макроблоки и плавно перетекает, звук тёпло булькает. Видео-шакализатор (он же шакалатор для роликов) делает это за вас: можно зашакалить видео онлайн, никуда его не заливая — всё считается в браузере.</p>
+    <h2>Как зашакалить видео</h2>
+    <ol>
+      <li>Перетащите ролик (mp4, mov, webm, mkv или gif) на страницу.</li>
+      <li>Выберите от 1 до 10 шакалов или красную кнопку 12/10, при желании обрежьте отрезок и нажмите «Превью 5 сек».</li>
+      <li>Нажмите «Шакализировать» и скачайте mp4.</li>
+    </ol>
+    <h2>Что такое датамош</h2>
+    <p>В обычном видео ключевые кадры периодически «перезагружают» картинку. Мы их выкидываем, и движение начинает таскать пиксели старого кадра: картинка плывёт и перетекает. Это датамош. Сверху добавляются настоящие ошибки декодера: зелёные блоки и сползшие куски кадра. Не пикселизация, а шакальное видео с характером.</p>
+    <h2>Почему звук булькает</h2>
+    <p>Звук пережимается в mp3 на 8 кбит/с, мягко теряет верха, трепещет и на доли секунды замолкает — как голосовое, пересланное через пять мессенджеров.</p>
+    <h2>FAQ</h2>
+    <h3>Бесплатно ли зашакалить видео?</h3>
+    <p>Да, бесплатно, без регистрации и водяных знаков.</p>
+    <h3>Загружается ли видео на сервер?</h3>
+    <p>Нет. Видео обрабатывается прямо в вашем браузере, на сервер ничего не отправляется.</p>
+    <h3>Сколько ждать?</h3>
+    <p>На компьютере обычно в несколько раз дольше длины ролика, на телефоне ещё дольше. Для подбора уровня есть «Превью 5 сек», а на телефоне лучше обрезать видео до 15 секунд.</p>
+    <h3>Какие лимиты по длине и размеру?</h3>
+    <p>До 200 МБ и до 3 минут. По умолчанию берутся первые 30 секунд, отрезок можно поменять в полях «с» и «до».</p>
+    <h3>Что такое 12/10 для видео?</h3>
+    <p>Пиксель-арт режим: картинка сжимается до 48 пикселей, палитра до 16 цветов, пиксели увеличиваются в десять раз. Из такого ролика можно скачать и GIF.</p>
+    <h3>Можно ли зашакалить фото?</h3>
+    <p>Да, у шакализатора есть фото-версия: <a href="https://pic.shakalizator.space/">pic.shakalizator.space</a>.</p>
+  </section>
+  <details><summary>Техническая информация</summary><pre id="info"></pre></details>
+  <footer>Видео-шакализатор · ffmpeg.wasm · всё считается локально · <a href="https://shakalizator.space/" style="color:var(--accent)">Все шакализаторы</a></footer>
+</div>
+
+<script type="module">
+
+/* ============ Настройки (легко тюнить) ============ */
+const CDN = {
+  lib: 'https://appassets.androidplatform.net/vendor/ffmpeg/index.js', // грузится только когда пользователь выбрал файл
+  worker: 'https://appassets.androidplatform.net/vendor/ffmpeg/worker.js',
+  st: 'https://appassets.androidplatform.net/vendor/core',
+  mt: 'https://appassets.androidplatform.net/vendor/core',
+};
+const MAX_BYTES = 200 * 1024 * 1024;
+const MAX_SECONDS = 180;
+const DEFAULT_SECONDS = 30;
+const PREVIEW_SECONDS = 5;
+const OUT_LONG = 480;       // апскейл итога (длинная сторона)
+const SMALL_FACTOR = 0.7;   // исходник меньше «стороны A» — берём 70% от исходника
+
+// side — сторона A; porcha — % испорченных байтов; mosh — доля выкидываемых I-кадров (0 = нет);
+// lag — lagfun decay (0 = нет); b — битрейт; dips — провалов битрейта на 10 сек; ar/mp3 — звук в проходе A;
+// lp — lowpass; bits — acrusher (0 = нет); drops — дропаутов звука на 10 сек; ab — aac; sat — насыщенность
+const LEVELS = {
+  1:  { side: 360, fps: 30, q: 8,  porcha: 0.0005, mosh: 0,    lag: 0,    b: '400k', dips: 1, ar: 22050, mp3: '48k', lp: 8000, bits: 0,  drops: 0, ab: '48k', sat: 1.0  },
+  2:  { side: 288, fps: 30, q: 12, porcha: 0.001,  mosh: 0,    lag: 0,    b: '250k', dips: 1, ar: 22050, mp3: '32k', lp: 7000, bits: 0,  drops: 0, ab: '32k', sat: 1.05 },
+  3:  { side: 240, fps: 25, q: 15, porcha: 0.002,  mosh: 0,    lag: 0,    b: '160k', dips: 2, ar: 16000, mp3: '24k', lp: 6000, bits: 0,  drops: 1, ab: '24k', sat: 1.1  },
+  4:  { side: 200, fps: 24, q: 18, porcha: 0.004,  mosh: 0,    lag: 0.6,  b: '110k', dips: 2, ar: 16000, mp3: '16k', lp: 5000, bits: 0,  drops: 1, ab: '20k', sat: 1.15 },
+  5:  { side: 160, fps: 20, q: 21, porcha: 0.007,  mosh: 0,    lag: 0.7,  b: '80k',  dips: 3, ar: 11025, mp3: '16k', lp: 4000, bits: 0,  drops: 2, ab: '16k', sat: 1.2  },
+  6:  { side: 144, fps: 15, q: 24, porcha: 0.01,   mosh: 0.4,  lag: 0.75, b: '60k',  dips: 3, ar: 11025, mp3: '12k', lp: 3500, bits: 10, drops: 2, ab: '12k', sat: 1.3  },
+  7:  { side: 120, fps: 15, q: 27, porcha: 0.015,  mosh: 0.55, lag: 0.8,  b: '45k',  dips: 4, ar: 8000,  mp3: '8k',  lp: 3000, bits: 8,  drops: 3, ab: '10k', sat: 1.4  },
+  8:  { side: 100, fps: 12, q: 29, porcha: 0.02,   mosh: 0.7,  lag: 0.85, b: '32k',  dips: 4, ar: 8000,  mp3: '8k',  lp: 3000, bits: 6,  drops: 4, ab: '8k',  sat: 1.5  },
+  9:  { side: 90,  fps: 10, q: 31, porcha: 0.03,   mosh: 0.85, lag: 0.9,  b: '24k',  dips: 5, ar: 8000,  mp3: '8k',  lp: 2500, bits: 5,  drops: 5, ab: '8k',  sat: 1.6  },
+  10: { side: 72,  fps: 8,  q: 31, porcha: 0.05,   mosh: 1.0,  lag: 0.93, b: '16k',  dips: 6, ar: 8000,  mp3: '8k',  lp: 2500, bits: 4,  drops: 7, ab: '6k',  sat: 1.8  },
+};
+const AUDIO_NOISE_AMOUNT = { 7: 8000, 8: 5000, 9: 3000, 10: 1800 }; // байт на 1 порчу (mp3-поток); с 7-го уровня
+const MODE1210 = { side: 48, fps: 8, colors: 16, mosh: 0.5, scale: 10, crf: 30, q: 6 };
+
+/* ============ Утилиты ============ */
+const $ = id => document.getElementById(id);
+const el = {
+  drop: $('drop'), file: $('file'), slider: $('slider'), label: $('label'), icons: $('icons'),
+  btn1210: $('btn1210'), levelBox: $('levelBox'), tFrom: $('tFrom'), tTo: $('tTo'), seed: $('seed'), dice: $('dice'),
+  meta: $('meta'), btnPreview: $('btnPreview'), btnGo: $('btnGo'), btnAgain: $('btnAgain'), btnGif: $('btnGif'),
+  btnDl: $('btnDl'), prog: $('prog'), stage: $('stage'), pct: $('pct'), bar: $('barfill'), btnCancel: $('btnCancel'),
+  slotA: $('slotA'), slotB: $('slotB'), resTitle: $('resTitle'), info: $('info'), mobWarn: $('mobWarn'),
+};
+const state = {
+  ff: null, mt: false, ver: '', file: null, inName: null, meta: null, mode1210: false,
+  busy: false, cancelled: false, out: null, outLevel: 1, outIs1210: false, extra: 0, outUrl: null, origUrl: null,
+  ffProgress: 0, decErrors: 0, lastLog: 0, forceST: false,
+};
+const LOGBUF = [];
+function info(...a) { el.info.textContent += a.join(' ') + '\n'; }
+function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const even = n => Math.max(2, Math.round(n / 2) * 2);
+const plural = n => n === 1 ? 'шакал' : (n >= 2 && n <= 4 ? 'шакала' : 'шакалов');
+const fmtT = s => { s = Math.max(0, Math.round(s)); return s >= 60 ? Math.floor(s / 60) + ' мин ' + (s % 60) + ' с' : s + ' с'; };
+const isIOS = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+const isMobile = isIOS || /Android/i.test(navigator.userAgent);
+const CANCEL = new Error('cancelled');
+const EXEC_TIMEOUT = 20 * 60 * 1000;
+const STALL_MS = 20 * 1000; // битый поток может зациклить декодер: нет ни строчки лога 20 с — считаем зависшим и перезапускаем ядро
+
+/* ============ Загрузка ядра ffmpeg ============ */
+// Скачивает файл (с повтором, если размер не сошёлся) и кэширует blob-URL: перезапуск ядра не качает заново
+const dlCache = new Map();
+async function dl(url, mime, onProgress, hintTotal) {
+  if (dlCache.has(url)) return dlCache.get(url);
+  let lastErr;
+  for (let i = 0; i < 3; i++) {
+    try {
+      // после первой неудачи обходим HTTP-кэш (там мог остаться обрезанный файл от оборванной загрузки)
+      const res = await fetch(url, i ? { cache: 'reload' } : undefined);
+      if (!res.ok) throw new Error('не скачалось ' + url + ' (' + res.status + ')');
+      const total = +res.headers.get('content-length') || hintTotal || 0;
+      const packed = !!res.headers.get('content-encoding'); // при сжатии content-length != размер распакованного
+      const reader = res.body.getReader(), chunks = [];
+      let got = 0;
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value); got += value.length;
+        onProgress && onProgress(total ? Math.min(1, got / total) : 0);
+      }
+      if (total && !packed && !hintTotal && got !== total) throw new Error('файл скачался не полностью: ' + url);
+      const blob = new Blob(chunks, { type: mime });
+      if (mime === 'application/wasm' && !WebAssembly.validate(await blob.arrayBuffer())) throw new Error('wasm скачался не полностью: ' + url);
+      const u = URL.createObjectURL(blob);
+      dlCache.set(url, u);
+      return u;
+    } catch (e) { lastErr = e; }
+  }
+  throw lastErr;
+}
+
+let corePromise = null;
+function loadCore(onStage) {
+  if (state.ff) return Promise.resolve(state.ff);
+  if (corePromise) return corePromise;
+  corePromise = (async () => {
+    const wantMT = false; // Android: bundled single-thread engine
+    const workerBlob = URL.createObjectURL(new Blob(['import ' + JSON.stringify(CDN.worker) + ';'], { type: 'text/javascript' }));
+    const attempt = async (mt) => {
+      const { FFmpeg } = await import(CDN.lib);
+      const base = mt ? CDN.mt : CDN.st;
+      const stage = (p) => onStage && onStage('Грузим ядро ffmpeg' + (mt ? ' (мульти-поток)' : '') + '…', p);
+      stage(0);
+      const coreURL = await dl(base + '/ffmpeg-core.js', 'text/javascript');
+      const wasmURL = await dl(base + '/ffmpeg-core.wasm', 'application/wasm', p => stage(p), 32129114);
+      const cfg = { classWorkerURL: workerBlob, coreURL, wasmURL };
+      if (mt) cfg.workerURL = await dl(base + '/ffmpeg-core.worker.js', 'text/javascript');
+      const ff = new FFmpeg();
+      ff.on('log', ({ message }) => { LOGBUF.push(message); state.lastLog = Date.now(); });
+      ff.on('progress', ({ progress }) => { state.ffProgress = Math.min(1, Math.max(0, +progress || 0)); state.lastLog = Date.now(); });
+      await ff.load(cfg);
+      return ff;
+    };
+    let ff;
+    try { ff = await attempt(wantMT); state.mt = wantMT; }
+    catch (e) {
+      if (!wantMT) throw e;
+      info('мульти-поток не стартовал, фолбэк на single-thread:', e && e.message);
+      ff = await attempt(false); state.mt = false;
+    }
+    state.ff = ff;
+    // версия ядра
+    LOGBUF.length = 0;
+    await ff.exec(['-version']);
+    const m = LOGBUF.join('\n').match(/ffmpeg version (\S+)/);
+    state.ver = m ? m[1] : '?';
+    info('ffmpeg', state.ver, state.mt ? '(core-mt)' : '(core, single-thread)', '· crossOriginIsolated =', !!window.crossOriginIsolated);
+    return ff;
+  })().finally(() => { corePromise = null; });
+  return corePromise;
+}
+
+// версия >= 4: у bsf noise есть выражения для amount/drop (key, n, pts…). Для 5.1.4 проверено вручную.
+function noiseHasExpressions() { const mj = parseInt(state.ver, 10); return isNaN(mj) || mj >= 4; }
+
+/* ============ Обёртка над exec ============ */
+async function ex(args) {
+  const ff = state.ff;
+  if (!ff) throw (state.cancelled ? CANCEL : new Error('ядро ffmpeg не загружено'));
+  LOGBUF.length = 0; state.ffProgress = 0;
+  const errBefore = state.decErrors;
+  let ret, stalled = false;
+  state.lastLog = Date.now();
+  const dog = setInterval(() => {
+    if (Date.now() - state.lastLog > STALL_MS) { stalled = true; clearInterval(dog); try { ff.terminate(); } catch (e) { /* ignore */ } }
+  }, 2000);
+  try { ret = await ff.exec(args, EXEC_TIMEOUT); }
+  catch (e) {
+    if (state.cancelled) throw CANCEL;
+    state.ff = null; // ядро умерло/зависло — загрузим заново
+    if (stalled) {
+      // мульти-поточное ядро на части команд (несколько выходов/входов) может встать намертво — переходим на single-thread
+      if (state.mt) { state.forceST = true; info('мульти-поточное ядро зависло — дальше работаем в один поток'); }
+      else info('ffmpeg завис на битом потоке — перезапускаю ядро');
+      return { ret: -1, log: LOGBUF.join('\n') };
+    }
+    throw e;
+  } finally { clearInterval(dog); }
+  if (state.cancelled) throw CANCEL;
+  const log = LOGBUF.join('\n');
+  // счётчик «decoding errors» в ядре общий на всю сессию — следим за ним, чтобы отличать новые ошибки от старых
+  const dm = [...log.matchAll(/(\d+) decoding errors/g)];
+  if (dm.length) state.decErrors = +dm[dm.length - 1][1];
+  return { ret, log, newDecErrors: state.decErrors - errBefore };
+}
+// после неудачного прогона на битых данных ядро лучше пересоздать
+async function resetCore() {
+  if (state.ff) { try { state.ff.terminate(); } catch (e) { /* ignore */ } state.ff = null; }
+}
+async function ensureInput(file, name) {
+  if (!state.ff) await loadCore((s, p) => setProg(s, p));
+  if (!(await size(name))) await state.ff.writeFile(name, new Uint8Array(await file.arrayBuffer()));
+}
+async function size(name) { if (!state.ff) return 0; try { return (await state.ff.readFile(name)).length; } catch (e) { return 0; } }
+async function rm(...names) { if (!state.ff) return; for (const n of names) { try { await state.ff.deleteFile(n); } catch (e) { /* нет файла */ } } }
+function lastFrames(log) { const m = [...log.matchAll(/frame=\s*(\d+)/g)]; return m.length ? +m[m.length - 1][1] : 0; }
+
+async function probe(name) {
+  const { log } = await ex(['-i', name]);
+  const d = log.match(/Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)/);
+  const duration = d ? (+d[1]) * 3600 + (+d[2]) * 60 + parseFloat(d[3]) : 0;
+  const v = log.match(/Stream #\d+:\d+[^\n]*Video:[^\n]*?(\d{2,5})x(\d{2,5})/);
+  return { duration, hasVideo: !!v, w: v ? +v[1] : 0, h: v ? +v[2] : 0, hasAudio: /Stream #\d+:\d+[^\n]*Audio:/.test(log) };
+}
+
+/* ============ Детерминированные случайные кусочки ============ */
+function makeRand(seed, salt) { return mulberry32((seed * 2654435761 + salt * 40503) >>> 0); }
+
+// провалы битрейта -> x264 zones (в кадрах выходного fps)
+function bitrateZones(P, dur, fps, rnd) {
+  const n = Math.max(1, Math.round(P.dips * dur / 10));
+  const zs = [];
+  for (let i = 0; i < n; i++) {
+    const len = 0.5 + rnd() * 1.5;
+    const start = 0.5 + rnd() * Math.max(0.1, dur - len - 0.8);
+    const mult = 0.08 + rnd() * 0.22;
+    zs.push({ a: Math.floor(start * fps), b: Math.floor((start + len) * fps), m: mult });
+  }
+  zs.sort((x, y) => x.a - y.a);
+  const out = [];
+  for (const z of zs) { if (!out.length || z.a > out[out.length - 1].b) out.push(z); }
+  return out.map(z => `${z.a},${z.b},b=${z.m.toFixed(2)}`).join('/');
+}
+// дропауты звука: volume=0 на кусках 50–300 мс
+function dropoutExpr(count, dur, rnd) {
+  if (count <= 0) return '';
+  const parts = [];
+  for (let i = 0; i < count; i++) {
+    const len = 0.05 + rnd() * 0.25;
+    const a = 0.3 + rnd() * Math.max(0.1, dur - len - 0.5);
+    parts.push(`between(t,${a.toFixed(3)},${(a + len).toFixed(3)})`);
+  }
+  return `volume=volume=0:enable='${parts.join('+')}'`;
+}
+
+const BSF_C = '\\,'; // запятая внутри выражения bsf
+// acrusher в режиме log на уже побитом звуке может выдать NaN/inf — aac-энкодер тогда падает; чистим выход
+const AUDIO_SANITIZE = "aeval='if(isnan(val(0))+isinf(val(0)),0,clip(val(0),-1,1))':c=same";
+
+/* ============ Проход A: разрушение ============ */
+function noiseBsf(opts) {
+  // opts: {amount (байт на порчу) , mosh (0..1), seedF, k1, k2}
+  const parts = [];
+  if (opts.amount > 0) {
+    parts.push(`amount='if(gt(n${BSF_C}0)${BSF_C}${opts.amount}*(0.5+mod(n*${opts.k1}+${opts.k2}${BSF_C}97)/97)${BSF_C}0)'`);
+  }
+  if (opts.mosh > 0) {
+    // выкидываем I-кадры кроме первого; mosh — доля (по хешу от seed и номера пакета)
+    parts.push(`drop='key*gt(n${BSF_C}0)*lt(abs(mod(sin(n*12.9898+${opts.seedF})*43758.5453${BSF_C}1))${BSF_C}${opts.mosh})'`);
+  }
+  return parts.length ? 'noise=' + parts.join(':') : '';
+}
+const scaleExpr = (S, flags) => `scale=w='if(gt(iw,ih),${S},-2)':h='if(gt(iw,ih),-2,${S})':flags=${flags}`;
+
+async function passA(job, P, attempt) {
+  const { inName, from, dur, hasAudio, srcLong, seed, is1210 } = job;
+  const rnd = makeRand(seed, 1);
+  const base = is1210 ? MODE1210.side : P.side;
+  let S = even(srcLong < base ? srcLong * SMALL_FACTOR : base);
+  if (is1210) S = base; // 48 фиксированно
+  const fps = is1210 ? MODE1210.fps : P.fps;
+  const g = Math.max(4, Math.round(fps * 1.5)); // короткий GOP: есть I-кадры, которые можно выкинуть для датамоша
+  const corrupt = is1210 ? 0 : (attempt >= 3 ? 0 : Math.round(100 / P.porcha) * Math.pow(2, attempt)); // каждая повторная попытка — порча вдвое слабее
+  const bsfV = noiseBsf({ amount: corrupt, mosh: is1210 ? MODE1210.mosh : P.mosh, seedF: (seed % 997) + 0.5, k1: 1 + Math.floor(rnd() * 95), k2: Math.floor(rnd() * 97) });
+  const args = ['-ss', String(from), '-t', String(dur), '-i', inName,
+    '-map', '0:v:0', '-vf', `${scaleExpr(S, 'neighbor')},fps=${fps}`,
+    '-c:v', 'mpeg4', '-q:v', String(is1210 ? MODE1210.q : P.q), '-bf', '0', '-g', String(g)];
+  if (bsfV) args.push('-bsf:v', bsfV);
+  args.push('-an', '-f', 'avi', 'dmg.avi');
+  if (hasAudio && !is1210) {
+    args.push('-map', '0:a:0', '-vn', '-ac', '1', '-ar', String(P.ar), '-c:a', 'libmp3lame', '-b:a', P.mp3);
+    const an = AUDIO_NOISE_AMOUNT[job.level];
+    if (an) args.push('-bsf:a', `noise=amount='if(gt(n${BSF_C}2)${BSF_C}${an * Math.pow(2, attempt)}${BSF_C}0)'`);
+    args.push('-f', 'mp3', 'dmg.mp3');
+  }
+  const r = await ex(args);
+  info(`[A] попытка ${attempt + 1}: ret=${r.ret}, кадров=${lastFrames(r.log)}, S=${S}, noise=${bsfV || '—'}`);
+  return r;
+}
+
+/* ============ Проход B: запекание ============ */
+async function passB(job, P) {
+  const { dur, hasAudio, seed } = job;
+  const fps = P.fps;
+  const rnd = makeRand(seed, 2);
+  const vf = [`fps=${fps}`];
+  if (job.level >= 8) {
+    const dropP = 0.12 + 0.03 * (job.level - 8);
+    vf.push(`select='gt(abs(mod(sin(n*12.9898+${(seed % 389) + 0.25})*43758.5453,1)),${dropP.toFixed(2)})'`, `fps=${fps}`);
+  }
+  if (P.lag) vf.push(`lagfun=decay=${P.lag}`);
+  vf.push(scaleExpr(OUT_LONG, 'bilinear'), `eq=saturation=${P.sat}:contrast=1.1`, 'unsharp=5:5:1.0');
+  const zones = bitrateZones(P, dur, fps, rnd);
+  const args = ['-err_detect', 'ignore_err', '-ec', 'guess_mvs+deblock+favor_inter', '-fflags', '+genpts+discardcorrupt', '-i', 'dmg.avi'];
+  if (hasAudio) args.push('-i', 'dmg.mp3');
+  args.push('-map', '0:v:0', '-vf', vf.join(','),
+    '-c:v', 'libx264', '-preset', 'ultrafast', '-b:v', P.b, '-maxrate', P.b, '-bufsize', P.b,
+    '-pix_fmt', 'yuv420p', '-movflags', '+faststart');
+  if (zones) args.push('-x264-params', `zones=${zones}`);
+  if (hasAudio) {
+    const af = ['highpass=f=300', `lowpass=f=${P.lp}`];
+    if (job.level >= 5) af.push(`tremolo=f=${(4 + job.level * 0.4).toFixed(1)}:d=${(0.3 + 0.05 * (job.level - 5)).toFixed(2)}`);
+    if (job.level >= 7) af.push('vibrato=f=5:d=0.3');
+    if (job.level >= 6 && P.bits) af.push(`acrusher=bits=${P.bits}:mode=log:aa=0`, AUDIO_SANITIZE);
+    const dc = Math.max(P.drops > 0 ? 1 : 0, Math.round(P.drops * dur / 10));
+    const de = dropoutExpr(dc, dur, makeRand(seed, 3));
+    if (de) af.push(de);
+    if (job.level === 10) af.push('volume=4', 'alimiter=limit=0.95');
+    args.push('-map', '1:a:0', '-af', af.join(','), '-c:a', 'aac', '-b:a', P.ab);
+  }
+  args.push('out.mp4');
+  const r = await ex(args);
+  info(`[B] ret=${r.ret}, кадров=${lastFrames(r.log)}, zones=${zones || '—'}`);
+  if (r.ret !== 0) info('   причина: ' + r.log.split('\n').filter(l => /rror|nvalid|ailed|nable|annot|ssert|Too many|mismatch|Timestamps/.test(l) && !/decoding errors|^Reading option|^Applying option/.test(l)).slice(-6).join(' | ').slice(-800));
+  return r;
+}
+
+// третье поколение потерь звука (уровни 8–10)
+async function passC(job, P) {
+  const r0 = await ex(['-i', 'out.mp4', '-vn', '-ac', '1', '-ar', '8000', '-c:a', 'libmp3lame', '-b:a', '8k', 'gen3.mp3']);
+  if (!state.ff) return;
+  const r = await ex(['-i', 'out.mp4', '-i', 'gen3.mp3', '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy',
+    '-c:a', 'aac', '-b:a', P.ab, '-movflags', '+faststart', 'out3.mp4']);
+  await rm('gen3.mp3');
+  if (r.ret === 0 && await size('out3.mp4') > 1000) { await rm('out.mp4'); await state.ff.rename('out3.mp4', 'out.mp4'); }
+  else { await rm('out3.mp4'); info('[C] не удалось, оставляю прошлое поколение звука'); }
+}
+
+/* ============ 12/10 ============ */
+function graph1210(final) {
+  const S = MODE1210.scale;
+  return `[0:v]fps=${MODE1210.fps},split[a][b];[a]palettegen=max_colors=${MODE1210.colors}[p];[b][p]paletteuse=dither=none,` +
+    `scale=iw*${S}:ih*${S}:flags=neighbor${final}[v]`;
+}
+async function passB1210(job) {
+  const { dur, hasAudio, seed } = job;
+  const args = ['-err_detect', 'ignore_err', '-ec', 'guess_mvs+deblock+favor_inter', '-fflags', '+genpts+discardcorrupt', '-i', 'dmg.avi'];
+  if (hasAudio) args.push('-ss', String(job.from), '-t', String(job.dur), '-i', job.inName);
+  args.push('-filter_complex', graph1210(',format=yuv420p'), '-map', '[v]',
+    '-c:v', 'libx264', '-preset', 'ultrafast', '-crf', String(MODE1210.crf), '-pix_fmt', 'yuv420p', '-movflags', '+faststart');
+  if (hasAudio) {
+    const af = ['lowpass=f=2000', 'acrusher=bits=4:mode=log:aa=0', AUDIO_SANITIZE];
+    const de = dropoutExpr(Math.max(2, Math.round(2 * dur / 10)), dur, makeRand(seed, 3));
+    if (de) af.push(de);
+    args.push('-map', '1:a:0', '-ac', '1', '-ar', '8000', '-af', af.join(','), '-c:a', 'aac', '-b:a', '16k');
+  }
+  args.push('out.mp4');
+  const r = await ex(args);
+  info(`[B 12/10] ret=${r.ret}, кадров=${lastFrames(r.log)}`);
+  return r;
+}
+async function makeGif() {
+  state.busy = true; setUi();
+  try {
+    await loadCore(); // после отмены ядро могло быть сброшено
+    if (!(await size('dmg12.avi'))) throw new Error('нет данных для GIF — запусти 12/10 заново');
+    const r = await ex(['-err_detect', 'ignore_err', '-ec', 'guess_mvs+deblock+favor_inter', '-fflags', '+genpts+discardcorrupt', '-i', 'dmg12.avi',
+      '-filter_complex', graph1210(''), '-map', '[v]', '-loop', '0', '-f', 'gif', 'out.gif']);
+    if (r.ret !== 0) throw new Error('ffmpeg вернул ' + r.ret);
+    const data = await state.ff.readFile('out.gif');
+    await rm('out.gif');
+    download(new Blob([data], { type: 'image/gif' }), 'shakal_video_12of10.gif');
+  } catch (e) { if (e !== CANCEL) alert('GIF не получился: ' + (e.message || e)); }
+  state.busy = false; setUi();
+}
+
+/* ============ Общий запуск ============ */
+function setProg(stage, p, eta) {
+  el.prog.classList.add('on');
+  el.stage.textContent = stage;
+  const pc = Math.round(Math.min(1, Math.max(0, p)) * 100);
+  el.bar.style.width = pc + '%';
+  el.pct.textContent = pc + '%' + (eta ? ' · осталось ~' + fmtT(eta) : '');
+}
+
+async function validate() {
+  if (!state.ff) return false;
+  const f = await state.ff.readFile('out.mp4');
+  if (f.length < 2000) return false;
+  // ядро ffmpeg.wasm игнорирует -v и печатает всё подряд, поэтому смотрим на итоговую строку декодера
+  const r = await ex(['-i', 'out.mp4', '-f', 'null', '-']);
+  info(`[валидация] ret=${r.ret}, кадров=${lastFrames(r.log)}, новых ошибок декодера=${r.newDecErrors}`);
+  return r.ret === 0 && lastFrames(r.log) > 0 && r.newDecErrors === 0;
+}
+
+async function process(job) {
+  const P = LEVELS[job.level];
+  const t0 = performance.now();
+  // этапы с весами: [название, вес]
+  const plan = job.is1210 ? [['Придаю характер…', 0.45], ['Запекаю…', 0.55]]
+    : (job.level >= 8 ? [['Придаю характер…', 0.4], ['Запекаю…', 0.5], ['Ещё одно поколение звука…', 0.1]] : [['Придаю характер…', 0.42], ['Запекаю…', 0.58]]);
+  let done = 0, stageIdx = 0;
+  const tick = setInterval(() => {
+    const [name, w] = plan[Math.min(stageIdx, plan.length - 1)];
+    const p = done + w * state.ffProgress;
+    const el_ = (performance.now() - t0) / 1000;
+    setProg(name, p, p > 0.05 ? el_ * (1 - p) / p : 0);
+  }, 250);
+  const endStage = () => { done += plan[stageIdx][1]; stageIdx++; state.ffProgress = 0; };
+  try {
+    let ok = false;
+    for (let attempt = 0; attempt < 4 && !ok; attempt++) {
+      if (attempt) info(`артефакты слишком бурные — повтор ${attempt}/3 с вдвое мягче`);
+      done = 0; stageIdx = 0;
+      if (!state.ff) { await loadCore((s, p) => setProg(s, p)); await restoreInput(job); }
+      await rm('dmg.avi', 'dmg.mp3', 'out.mp4');
+      const mtBefore = state.mt; // если зависло именно мульти-поточное ядро — это не вина порчи, попытку не тратим
+      const a = await passA(job, P, attempt);
+      const aSize = await size('dmg.avi');
+      if (a.ret !== 0 || aSize < 500) { await resetCore(); if (mtBefore && state.forceST) attempt--; continue; }
+      endStage();
+      const b = job.is1210 ? await passB1210(job) : await passB(job, P);
+      if (job.is1210) await rm('dmg12.avi');
+      if (job.is1210) { try { await state.ff.rename('dmg.avi', 'dmg12.avi'); } catch (e) { /* ignore */ } }
+      else await rm('dmg.avi');
+      await rm('dmg.mp3');
+      if (b.ret !== 0 || lastFrames(b.log) === 0 || await size('out.mp4') < 2000) { await resetCore(); if (mtBefore && state.forceST) attempt--; continue; }
+      endStage();
+      if (!job.is1210 && job.level >= 8 && job.hasAudio) { await passC(job, P); endStage(); }
+      if (!(await validate())) { info('[валидация] файл не прошёл проверку, повтор'); await resetCore(); continue; }
+      ok = true;
+    }
+    if (!ok) throw new Error('декодер не выдал ни одного кадра даже с ослабленными артефактами — попробуй другой seed или уровень пониже');
+    const data = await state.ff.readFile('out.mp4');
+    await rm('out.mp4');
+    return data;
+  } finally { clearInterval(tick); }
+}
+
+async function restoreInput(job) {
+  // ядро перезапущено/сброшено: вернуть входной файл в виртуальную ФС
+  const buf = new Uint8Array(await job.source.arrayBuffer());
+  await state.ff.writeFile(job.inName, buf);
+}
+
+function download(blob, name) {
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = name;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+}
+
+/* ============ UI ============ */
+function updateLabel() {
+  const lv = +el.slider.value;
+  if (state.mode1210) { el.label.textContent = '12/10 шакалов'; el.icons.textContent = '🔥🐺🔥'; }
+  else { el.label.textContent = lv + ' ' + plural(lv); el.icons.textContent = '🐺'.repeat(lv); }
+  el.levelBox.classList.toggle('dim', state.mode1210);
+  el.btn1210.classList.toggle('on', state.mode1210);
+}
+function setUi() {
+  const b = state.busy;
+  el.btnGo.disabled = b || !state.file; el.btnPreview.disabled = b || !state.file;
+  el.btnAgain.disabled = b || !state.out;
+  el.btnDl.disabled = b || !state.out;
+  el.btnGif.disabled = b || !(state.out && state.outIs1210);
+  el.btnGif.style.display = state.mode1210 || state.outIs1210 ? '' : 'none';
+  el.slider.disabled = b; el.btn1210.disabled = b;
+}
+function showOut(data, level, is1210) {
+  if (state.outUrl) URL.revokeObjectURL(state.outUrl);
+  state.out = data; state.outLevel = level; state.outIs1210 = is1210;
+  state.outUrl = URL.createObjectURL(new Blob([data], { type: 'video/mp4' }));
+  el.slotB.innerHTML = '';
+  const v = document.createElement('video');
+  v.controls = true; v.playsInline = true; v.loop = true; v.src = state.outUrl; v.setAttribute('aria-label', 'Шакальное видео');
+  el.slotB.appendChild(v);
+  el.resTitle.textContent = 'Результат — ' + (is1210 ? '12/10 шакалов' : level + ' ' + plural(level)) + (state.extra ? ` (+${state.extra} пережатий)` : '');
+}
+function newSeed() { el.seed.value = String(1 + Math.floor(Math.random() * 999999)); }
+
+async function onFile(file) {
+  if (!file) return;
+  if (file.size > MAX_BYTES) { alert('Файл больше 200 МБ'); return; }
+  el.info.textContent = '';
+  state.file = file; state.out = null; state.extra = 0; state.meta = null;
+  document.body.classList.add('has-file');
+  if (state.origUrl) URL.revokeObjectURL(state.origUrl);
+  state.origUrl = URL.createObjectURL(file);
+  el.slotA.innerHTML = '';
+  const v = document.createElement('video');
+  v.controls = true; v.playsInline = true; v.loop = true; v.src = state.origUrl; v.setAttribute('aria-label', 'Исходное видео');
+  el.slotA.appendChild(v);
+  el.slotB.innerHTML = '<div class="empty">Нажми «Шакализировать»</div>';
+  el.mobWarn.style.display = (isMobile || !window.crossOriginIsolated) ? 'block' : 'none';
+  if (!el.seed.value) newSeed();
+  state.busy = true; setUi();
+  try {
+    await loadCore((s, p) => setProg(s, p));
+    const ext = (file.name.match(/\.([a-z0-9]+)$/i) || [, 'mp4'])[1].toLowerCase();
+    state.inName = 'input.' + ext;
+    setProg('Читаю файл…', 0);
+    await state.ff.writeFile(state.inName, new Uint8Array(await file.arrayBuffer()));
+    state.meta = await probe(state.inName);
+    if (!state.meta.hasVideo) throw new Error('в файле нет видеодорожки');
+    el.tTo.value = Math.min(DEFAULT_SECONDS, Math.max(0.5, state.meta.duration || DEFAULT_SECONDS));
+    el.tFrom.value = 0;
+    el.meta.textContent = `${state.meta.w}×${state.meta.h}, ${fmtT(state.meta.duration)}${state.meta.hasAudio ? ', со звуком' : ', без звука'}`;
+    el.prog.classList.remove('on');
+  } catch (e) {
+    if (e !== CANCEL) { setProg('Ошибка: ' + (e.message || e), 0); console.error(e); }
+  }
+  state.busy = false; setUi();
+}
+
+async function go({ preview, again }) {
+  if (!state.file || state.busy) return;
+  state.busy = true; state.cancelled = false; setUi();
+  const level = +el.slider.value, is1210 = state.mode1210;
+  try {
+    await ensureInput(state.file, state.inName);
+    let from = Math.max(0, +el.tFrom.value || 0), to = +el.tTo.value || DEFAULT_SECONDS;
+    if (to <= from) to = from + 0.5;
+    let dur = Math.min(to - from, MAX_SECONDS);
+    if (state.meta.duration) dur = Math.min(dur, Math.max(0.5, state.meta.duration - from));
+    if (preview) dur = Math.min(dur, PREVIEW_SECONDS);
+    let seed = parseInt(el.seed.value, 10); if (!(seed > 0)) { newSeed(); seed = +el.seed.value; }
+
+    const job = { level, is1210, seed, source: state.file, inName: state.inName, from, dur, hasAudio: state.meta.hasAudio, srcLong: Math.max(state.meta.w, state.meta.h) };
+    if (again) {
+      // накопительная деградация: результат становится входом
+      job.inName = 'again_in.mp4'; job.from = 0; job.dur = state.outDur || dur;
+      job.srcLong = OUT_LONG; job.hasAudio = state.meta.hasAudio;
+      job.source = new Blob([state.out], { type: 'video/mp4' });
+      await ensureInput(job.source, 'again_in.mp4');
+    }
+    setProg('Готовлюсь…', 0);
+    const data = await process(job);
+    if (again) { await rm('again_in.mp4'); state.extra++; } else state.extra = 0;
+    state.outDur = job.dur;
+    showOut(data, level, is1210);
+    info('готово:', Math.round(data.length / 1024), 'КБ, seed', seed);
+    el.prog.classList.remove('on');
+  } catch (e) {
+    if (e === CANCEL) { setProg('Отменено', 0); setTimeout(() => el.prog.classList.remove('on'), 1200); }
+    else { setProg('Ошибка: ' + (e.message || e), 0); console.error(e); info('ОШИБКА', e.message || e); }
+  }
+  state.busy = false; setUi();
+}
+
+el.drop.addEventListener('click', () => el.file.click());
+el.drop.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') el.file.click(); });
+el.file.addEventListener('change', () => { onFile(el.file.files[0]); el.file.value = ''; });
+['dragenter', 'dragover'].forEach(ev => window.addEventListener(ev, e => { e.preventDefault(); el.drop.classList.add('over'); }));
+['dragleave', 'drop'].forEach(ev => window.addEventListener(ev, e => { e.preventDefault(); if (ev === 'drop' || e.target === document.documentElement) el.drop.classList.remove('over'); }));
+window.addEventListener('drop', e => { el.drop.classList.remove('over'); onFile(e.dataTransfer.files[0]); });
+el.slider.addEventListener('input', () => { updateLabel(); });
+el.btn1210.addEventListener('click', () => { state.mode1210 = !state.mode1210; updateLabel(); setUi(); });
+el.dice.addEventListener('click', newSeed);
+el.btnGo.addEventListener('click', () => go({}));
+el.btnPreview.addEventListener('click', () => go({ preview: true }));
+el.btnAgain.addEventListener('click', () => go({ again: true }));
+el.btnGif.addEventListener('click', makeGif);
+el.btnDl.addEventListener('click', () => {
+  if (!state.out) return;
+  download(new Blob([state.out], { type: 'video/mp4' }), state.outIs1210 ? 'shakal_video_12of10.mp4' : 'shakal_video_' + state.outLevel + '.mp4');
+});
+el.btnCancel.addEventListener('click', () => {
+  state.cancelled = true;
+  if (state.ff) { try { state.ff.terminate(); } catch (e) { /* ignore */ } state.ff = null; }
+  setProg('Отмена…', 0);
+});
+
+newSeed(); updateLabel(); setUi();
+window.shakalVid = { LEVELS, MODE1210, state, loadCore, ex, probe, process, onFile, go };
+</script>
+</body>
+</html>

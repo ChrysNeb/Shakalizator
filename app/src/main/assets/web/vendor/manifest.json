@@ -1,0 +1,62 @@
+[
+  {
+    "file": "ffmpeg/index.js",
+    "source": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/esm/index.js",
+    "bytes": 30,
+    "sha256": "b08695fea8eff663c7e4ff4c28bd6e356aeb95e608f2a8a3f12fc1fe29d91123"
+  },
+  {
+    "file": "ffmpeg/classes.js",
+    "source": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/esm/classes.js",
+    "bytes": 8698,
+    "sha256": "ac411e19c69cffcf2669aa9e56c90dc120d5f6ac89d7aafb0000fc7841376c70"
+  },
+  {
+    "file": "ffmpeg/const.js",
+    "source": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/esm/const.js",
+    "bytes": 974,
+    "sha256": "e16b2532be2545bc9537dfbd3db834447462ad90aa201e4c5ca238fdc7a9df95"
+  },
+  {
+    "file": "ffmpeg/errors.js",
+    "source": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/esm/errors.js",
+    "bytes": 332,
+    "sha256": "619310d7ef5fe5fefa0a31927db862b7c291713cfef4d71753fa8aafd18f4db6"
+  },
+  {
+    "file": "ffmpeg/types.js",
+    "source": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/esm/types.js",
+    "bytes": 295,
+    "sha256": "72f80e6fd44fcd18b55c9a0deb3bc70b9bb37480cf969045ca4521f5a11300f5"
+  },
+  {
+    "file": "ffmpeg/utils.js",
+    "source": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/esm/utils.js",
+    "bytes": 138,
+    "sha256": "8c2e0e16445f8d3a0acbb812f2c60541a92c88ed0bf9ffe96c52e7fb6c8b1d72"
+  },
+  {
+    "file": "ffmpeg/worker.js",
+    "source": "https://unpkg.com/@ffmpeg/ffmpeg@0.12.10/dist/esm/worker.js",
+    "bytes": 4810,
+    "sha256": "b35bf79766eb53547655c5142ab90b50134f0b6de56ab5cdb2ae73d1e8aeaca5"
+  },
+  {
+    "file": "core/ffmpeg-core.js",
+    "source": "https://unpkg.com/@ffmpeg/core@0.12.6/dist/esm/ffmpeg-core.js",
+    "bytes": 114494,
+    "sha256": "c972f5abeafcd5f3949e54edfbdc74a9badb27025809feb1945d468ffbcfb7f1"
+  },
+  {
+    "file": "core/ffmpeg-core.wasm",
+    "source": "https://unpkg.com/@ffmpeg/core@0.12.6/dist/esm/ffmpeg-core.wasm",
+    "bytes": 32129114,
+    "sha256": "2390efa7fb66e7e42dbae15427571a5ffc96b829480904c30f471f0a78967f61"
+  },
+  {
+    "file": "ffmpeg/LICENSE",
+    "source": "https://raw.githubusercontent.com/ffmpegwasm/ffmpeg.wasm/v0.12.10/LICENSE",
+    "bytes": 1066,
+    "sha256": "3e123e29517d76504ffce77b3f8e2ccffd4712493f27694b0aba3e376676459f"
+  }
+]
