@@ -26,7 +26,7 @@ jobs:
           ram-size: 3072M
           heap-size: 768M
           emulator-options: '-no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim'
-          script: sh ./gradlew connectedDebugAndroidTest
+          script: sh ./gradlew connectedDebugAndroidTest; result=$?; mkdir -p app/build/screenshots; adb pull /sdcard/Download/shakalizator-home.png app/build/screenshots/ || true; exit $result
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -34,3 +34,4 @@ jobs:
           path: |
             app/build/reports/androidTests/
             app/build/outputs/androidTest-results/
+            app/build/screenshots/

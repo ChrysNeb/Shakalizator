@@ -19,6 +19,7 @@ jobs:
           packages: 'platform-tools platforms;android-35 build-tools;34.0.0'
           log-accepted-android-sdk-licenses: false
       - uses: gradle/actions/setup-gradle@v4
+      - run: node tools/check-bundle.mjs
       - run: sh ./gradlew assembleDebug testDebugUnitTest lintDebug
       - uses: actions/upload-artifact@v4
         with:
